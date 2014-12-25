@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>The doctor that saved my life and got my heart in return</title>
+	<link rel="shortcut icon" href="verge_icon.ico" >
+<style>
+
+#main{
+	display:block;
+	position:relative;
+	width:1015px;
+	height:100%;
+	margin:0 auto;
+	background-color: white;
+	overflow: auto;
+}
+#logo{
+	float:left;
+	margin-left:0%;
+	width:31.1%;
+}
+#topcenter{
+	float:left;
+	width:8.5%;
+	margin-top:2.3%;
+}
+#topright{
+	margin-top: 0.2%;
+	width:14.5%;
+	float:left;
+}
+#toprightblock{
+	display:block;
+	background-color: white;
+	border-top:1px solid #DCDCDC;
+	float:left;
+	margin-top:2.3%;
+	width:44.7%;
+	height:10%;
+	padding-left: 1%;
+}
+#trending{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color:#FF4500;
+	margin-top:1%;
+	font-size:14px;
+}
+#trending_story{
+	font-family: Georgia, serif;
+	color:black;
+	margin-top:-2%;
+	font-size:12px;
+	margin-bottom:1.5%;
+}
+#tool_bar{
+	display:block;
+	background-color: black;
+	color:white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width:96.8%;
+	margin-left: 3%;
+	float:left;
+}
+#profile{
+	margin-left: 0.5%;
+	margin-top: 0.5%;
+	float:left;
+}
+#login{
+	margin-left:1%;
+	margin-top:1.4%;
+	font-size:10px;
+	float:left;
+}
+#toolbar_text{
+	margin-top:1%;
+	margin-left:2%;
+	float:left;
+	margin-bottom:1.2%;
+}
+#search{
+	margin-top:0.5%;
+	margin-right:0%;
+	float:right;
+}
+#toolbar_link:link {
+    color:#FFFFFF;
+    background-color:transparent;
+    text-decoration:none;
+}
+#toolbar_link:visited {
+    color:#FFFFFF;
+    background-color:transparent;
+    text-decoration:none;
+}
+#toolbar_link:hover {
+    color:#FF4500;
+    background-color:transparent;
+    text-decoration:none;
+}
+#toolbar_link:active {
+    color:#FFFFFF;
+    background-color:transparent;
+    text-decoration:none;
+}
+
+#prev_story{
+	background-color: white;
+	border-left:1px solid #DCDCDC;
+	width:48.2%;
+	margin-left:3%;
+	color:black;
+	float:left;
+
+}
+#next_story{
+	background-color: white;
+	border-left:1px solid #DCDCDC;
+	border-right:1px solid #DCDCDC;
+	width:48.3%;
+	color:black;
+	float:left;
+}
+#right_arrow{
+	float:right;
+}
+#left_arrow{
+	float:left;
+}
+#pn_title{
+	text-align:center;
+	font-family: Georgia, serif;
+	font-size:10px;
+	margin-top:4%;
+}
+#pn_p{
+	text-align:center;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color: gray;
+	font-size:14px;
+	margin-top:2%;
+	margin-right:2%;
+	margin-left:2%;
+}
+#article_title{
+	background-color: white;
+	border:1px solid #DCDCDC;
+	margin-left:3%;
+	padding-left:2%;
+	width:94.6%;
+	float:left;
+}
+#tag_link:link{
+	background-color:transparent;
+    text-decoration:none;
+}
+#tag_link:hover{
+	background-color:transparent;
+	text-decoration:underline;
+	color:white;
+}
+#tag_link{
+	font-size:8px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:white;
+	float:left;
+	padding:3px;
+	margin-left:0.5%;
+}
+#comments{
+	display:block;
+	background-color: black;
+	font-size:35px;
+	width:7%;
+	padding-left:7px;
+	float:right;
+	position:relative;
+}
+#comments_link:link{
+	background-color:transparent;
+    text-decoration:none;
+}
+#comments_link:hover{
+	background-color:transparent;
+	text-decoration:none;
+	color:black;
+}
+#comments_link{
+	color:black;
+	font-size:11px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	left:940px;
+	top:245px;
+	position:absolute;
+}
+
+#article_title h1{
+	font-size:45px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:black;
+}
+#article_title h2{
+	color:black;
+	font-size:15px;
+}
+#name_link:link{
+	color:#FF4500;
+	background-color:transparent;
+    text-decoration:none;
+}
+#name_link:hover{
+	background-color:transparent;
+	text-decoration:underline;
+	color:#FF4500;
+}
+#name_link:visited{
+	background-color:transparent;
+	text-decoration:none;
+	color:#FF4500;
+}
+#followblock{
+	background-color:#f7f1ee;
+	border-left:1px solid #DCDCDC;
+	border-right: 1px solid #DCDCDC;
+	margin-left:3%;
+	width:65%;
+	float:left;
+}
+#followblock h1{
+	font-size:15px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding-left: 2%;
+}
+#gfollow{
+	float:right;
+	margin-top:-5%;
+	margin-right:10.5%;
+}
+#subscribe{
+	float:right;
+	margin-top:-5%;
+	margin-right:21.2%;
+}
+#tfollow{
+	float:right;
+	margin-top:-5%;
+	margin-right:34.3%;
+}
+#like{
+	float:right;
+	margin-top:-5%;
+	margin-right:45%;
+}
+#storyblock{
+	color:black;
+	background-color: white;
+	border: 1px solid #DCDCDC;
+	float:left;
+	padding:2%;
+	margin-left:3%;
+	width:61%;
+}
+#doctor{
+	width:100%;
+	float:left;
+}
+#artshare{
+	float:left;
+	margin-top:2%;
+	margin-left:0.5%;
+	margin-bottom:2%;
+}
+#storyblock p{
+	float:left;
+}
+#story{
+	font-size:14px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#news_letter{
+	margin-top:-4.8%;
+	float:left;
+}
+
+#email_signup{
+	font-size:14px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color:white;
+	float:left;
+	width:27.5%;
+	padding:2%;
+	border-top:2px solid black;
+	border-right:1px solid #DCDCDC;
+}
+#signup{
+	font-size:12px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:white;
+	padding-right:3px;
+	padding-left:3px;
+	margin-top:-7%;
+	margin-right:32%;
+	background-color:black;
+	float:right;
+}
+#signup:link{
+	color:white;
+	background-color:black;
+	text-decoration:none;
+}
+#signup:hover{
+	color:white;
+	background-color:#FF4500;
+	text-decoration:none;
+}
+
+#latestheadlines{
+	margin-top:0%;
+	float:left;
+}
+
+#latest_headlines{
+	font-size:14px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	background-color:white;
+	float:left;
+	width:27.5%;
+	padding:2%;
+	border-top:2px solid black;
+	border-right:1px solid #DCDCDC;
+}
+#news{
+	font-size:14px;
+	background-color:white;
+	float:left;
+	width:100%;
+	border-bottom:2px dotted #DCDCDC;
+}
+#news_img{
+	float:left;
+	margin-right:10px;
+}
+#news_headlines{
+	float:left;
+}
+#news_link:link {
+    color:black;
+    background-color:transparent;
+    text-decoration:none;
+}
+#news_link:visited {
+    color:black;
+    background-color:transparent;
+    text-decoration:none;
+}
+#news_link:hover {
+    color:#FF4500;
+    background-color:transparent;
+    text-decoration:none;
+}
+#news_link:active {
+    color:black;
+    background-color:transparent;
+    text-decoration:none;
+}
+#reasons{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#FF4500;
+	font-size:25px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="main">
+
+<a href=""><img id="logo" src="logo.png" alt="logo"></a>
+
+<a href=""><img id="topcenter" src="orion.png" alt="topcenter"></a>
+
+<div id="toprightblock">
+	<h1 id="trending">TRENDING NOW</h1>
+	<a id="toolbar_link"href=""><p id="trending_story"> The Orion launch had all the nerds around the world just completely nerdgasm throughout the whole launching process, all except One</p></a>
+</div>
+
+<a href=""><img id="topright" src="topright.png" alt="topright"></a>
+
+<div id="tool_bar">
+	<img id="profile" src="profile.png" alt="profile">
+	<a id="toolbar_link"href=""><p id="login"> LOG IN | SING UP </p></a>
+	<a id="toolbar_link"href=""><p id="toolbar_text"> LONGFORM </p></a>
+	<a id="toolbar_link"href=""><p id="toolbar_text"> VIDEO </p></a>
+	<a id="toolbar_link"href=""><p id="toolbar_text"> REVIEWS </p></a>
+	<a id="toolbar_link"href=""><p id="toolbar_text"> TECH </p></a>
+	<a id="toolbar_link"href=""><p id="toolbar_text"> SCIENCE </p></a>
+	<a id="toolbar_link"href=""><p id="toolbar_text"> CULTURE </p></a>
+	<a id="toolbar_link"href=""><p id="toolbar_text"> DESIGN </p></a>
+	<a id="toolbar_link"href=""><p id="toolbar_text"> BUSINESS </p></a>
+	<a id="toolbar_link"href=""><p id="toolbar_text"> US &amp WORLD </p></a>
+	<a id="toolbar_link"href=""><p id="toolbar_text"> FORUMS </p></a>
+	<a id="toolbar_link"href=""><img id="search" src="search.png" alt="search"></a>
+</div>
+
+<a id="pn_link" href="https://www.youtube.com/watch?v=v93Jh6JNBng"><div id="prev_story">
+	<img id="left_arrow" src="left_arrow.png" alt="left_arrow">
+	<p id="pn_title"><b>PREVIOUS STORY<b></p>
+	<p id="pn_p">The Star Wars VII teaser trailer gets remade with a funny twist by a fan</p>
+</div></a>
+
+<a id="pn_link" href="https://www.youtube.com/watch?v=MYSVMgRr6pw"><div id="next_story">
+	<img id="right_arrow" src="right_arrow.png" alt="right_arrow">
+	<p id="pn_title"><b>NEXT STORY<b></p>
+	<p id="pn_p">That one song your boyfriend doesn't like when you send it to him but then he sends it back to you a month later</p>
+</div></a>
+
+<div id="article_title">
+	<a id="tag_link" style="background-color:black;margin:0;"href="">TECH</a>
+	<a id="tag_link" style="background-color:#72c9d9"href="">SCIENCE</a>
+	<a id="tag_link" style="background-color:#488db3"href="">CULTURE</a>
+	<a id="tag_link" style="background-color:#FF4500"href="">POP</a>
+	<a id="tag_link" style="background-color:#9fbf4b"href="">COOL</a>
+	<a id="tag_link" style="background-color:#EE82EE"href="">HASHTAG</a>
+
+	<div id="comments">
+		<a id="toolbar_link"href=""><p id="toolbar_text"> 7 </p></a>
+	</div>
+	<a id="comments_link"href=""><p>COMMENTS<p></a>
+
+	<h1>The doctor that saved my life and got my heart in return</h1>
+
+	<h2><i>By</i> <a id="name_link" href="">Nilatac Pop</a> <small style="color:gray">on December 24, 2014 8:27 pm</small></h2>
+</div>
+
+<div id="followblock">
+	<h1> DON'T MISS STORIES <i style="color:#FF4500">FOLLOW THE VERGE</i></h1>
+	<a href=""><img id="gfollow" src="gfollow.png" alt="gfollow"></a>
+	<a href=""><img id="subscribe" src="subscribe.png" alt="subscribe"></a>
+	<a href=""><img id="tfollow" src="tfollow.png" alt="tfollow"></a>
+	<a href=""><img id="like" src="like.png" alt="like"></a>
+</div>
+
+<div id="storyblock">
+	<img id="doctor" src="doctor.jpg" alt="doctor">
+	<a href=""><img id="artshare" src="fshare.png" alt="fshare"></a>
+	<a href=""><img id="artshare" src="tweet.png" alt="tweet"></a>
+	<a href=""><img id="artshare" src="gshare.png" alt="tweet"></a>
+	<a href=""><img id="artshare" src="inshare.png" alt="tweet"></a>
+	<a href=""><img id="artshare" src="pin.png" alt="tweet"></a>
+	<p id="story"> So I should give a little backstory. I like to go travelling every summer. This summer I decided to travel alone for various reasons. I ended up in a very beautiful country with very friendly residents. The sights were stunning. It was so peaceful and calm that it almost felt like home. </p>
+	<p id="story"> One day I decide to go to the beach with a few people I met. The sea was beautiful as expected. We enjoyed the sun on the beach during the day and went out to clubs and bars during the night. We decided to go to a very large club one night and all was going well, until I tripped and hit my head off a table. I was rushed to the hospital that night and was unconcious until the next morning. What I didn't know when I woke up was that I almost died that night. The way I hit my head was bad to say the least. A large vein burst and I had internal bleeding in my skull. They had trouble finding the source of the bleeding because there were multiple ruptures. One doctor did however manage to seal them up before I recieved any permanent brain damage. She was the one waiting for me to wake up that morning and she was the first thing I saw when I opened my eyes.  </p>
+	<p id="story"> At this point I was sure I had made my way to the pearly gates because she was the most beautiful thing I have seen in my life. Right there in front of me as I wake up. She told me what happened last night and all the procedures they performed. I really enjoyed talking to her but she was gone as fast as she came. I was supposed to be admitted for another day but I checked out earlier that morning. </p>
+	<p id="story"> A couple days later, out of chance I saw my doctor again out on the street. You can imagine my surprised because she was just stunningly beautiful and I regreted not asking her out that day, but I was given a second chance. We talked for almost an hour but she had a couple of errands to run so she couldn't stay and chat any longer. She did however invite me out to dinner later that night. This of course caught me by surprise. Out of excitement and surprise I of course said yes. </p>
+	<p id="story"> We went out later that night and talked for hours on end. Talking to her felt so amazing. I felt like I could talk to her about anything. Later that night we of course kissed. It was the best kiss of my life. Something about it made it almost "magical." It was without doubt, the best night of my life. It was the night I fell in love with this beautiful girl. However, a lot of time has passed since that night, and I have gotten to know her more. With every new thing I learn about her, I love her even more. Here are a few reasons why I love this girl, and if these reasons don't describe your dream girl, I would suggest you change that opinion. I will refrain from using the word <i>perfect</i> in this list because otherwise it would be too abundant.</p>
+	<p id="reasons"> My reasons for why she is the love of my life</p>
+	<p id="story"> Lets start with her appearance. As I have described earlier, this girl is absolutely stunning. She has long auburn hair, which is my favourite hair color and the most rare. She has big brown eyse that you could stare into for hours. She has a cute little nose that is just so lovely to kiss. Her lips are just amazing. The are just the right size for kissing, and they look so beautiful when you they arent being kissed. They are so plush and just naturally red. She wouldn't ever need to wear lipstick. She also has the most beautiful smile. Something about that smile makes you feel like everything is okay. She also has such cute round cheeks with freckles on them. All these traits are very cute when they stand alone. When you put them all together however, you end up with the cutest girl imaginable right before your eyes.</p>
+	<p id="story"> She is also very intelligent. I could discuss every and any subject with her because she would always has something intelligent to say about it; politics, religion, science, technology, society, you name it. Conversations with her are always so fulfilling. Even though she knows very much, she is always open to new ideas. That is a very valuable trait. She also does so well in school withouth putting too much work into one subject, but that doesn't mean she doesn't work hard, because she does. Every night she stays up late finishing homework or doing something that contributes to her learning. In her free time she reads articles and participates in science contests. If she doesn't sound perfect by this point I don't know what will. </p>
+	<p id="story"> Her taste in movies and music is impeccable. She likes science fiction and listens to rock. So yes, she is very nerdy. She is my nerd. I can watch all my favourite movies with her by my side, enjoying the movie as much as I am. Not many peolple can say the same. She also loves fantisy movies such as Lord of the Rings which is so precious. And even though she listens to rock a lot, she is open to lots of other genres, such as hip hop, which is my favourite genre. I can share any song I find cool with her, and she can do the same. She is even interested in video games, and since I am a gamer, this was a huge delight. </p>
+	<p id="story"> Class is something that she clearly possesses. From the way she dresses to the way she acts. She always wears such classy clothes when she goes out. She knows exactly what outfit looks stunning on her, and she wears it like it's her job. She also almost never curses. I have never heard her curse in public. She acts like a lady. She respects her self image very much which is a reason why she does not get drunk. She of course drinks a few drinks but she knows her limit. She is always in control. She is such a good girl. </p>
+	<p id="story"> Hilarious is definitely a word I would use to describe her. The jokes she makes always make me smile or laugh. They are always in good taste and always have some form of wit behind them. Aside from that, she also has an amazing sense of humour that matches mine. </p>
+	<p id="story"> She is always so thoughtful. She never fails to make me feel cared for and loved. She always finds a way. Sometimes she sends me the cutest videos that just bring a tears to my eyes, because I could not imagine someone so adorable, yet there she is. And the selfies she sends me are always so cute. Her smile makes my heart melt. </p>
+	<p id ="story">This is not a complete list. There is always something else I love about her that I cannot recall, and every day she gives me another reason to love her. The more I learn about her, the more I love her. She is the only girl I have ever loved and ever will love. She is my little Georgeta.  </p> 
+
+</div>
+
+<img id="news_letter" src="email_news.png" alt="email">
+
+<div id="email_signup">
+	<p>The best of The Verge, delivered daily - sign up for The Verge Newsletter.</p>
+	<form><input type="text" name="email" value="Email address..." class="textbox"></form>
+	<a id="signup" href=""><b>SIGN UP</b></a>
+</div>
+
+<img id="latestheadlines" src="latestheadlines.png" alt="latestheadlines">
+
+<div id="latest_headlines">
+	<div id="news">
+		<a id="news_link"href="https://www.youtube.com/watch?v=vEOLFO83sgc"><p id="news_headlines"><img id="news_img" src="ps3.png" alt="ps3"> Little Big Planet 3 is that one game every big brother should buy his annoying little sisters </p></a>
+	</div>
+	<div id="news">
+		<a id="news_link"href="http://www.imdb.com/title/tt2788710/"><p id="news_headlines"><img id="news_img" src="interview.png" alt="interview"> The highest rated movie of all time, comes highly recommended by the Supreme Ruler himself</p></a>
+	</div>
+	<div id="news">
+		<a id="news_link"href=""><p id="news_headlines"><img id="news_img" src="comcast.png" alt="comcast"> Comcast is providing their customers with the best service in the whole industry, tech experts say</p></a>
+	</div>
+</div>
+
+</div>
+</body>
+</html>
